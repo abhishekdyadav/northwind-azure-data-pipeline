@@ -83,4 +83,4 @@ Full diagram: `architecture.png`
 
 ## Scale
 
-The original Northwind dataset has only a few hundred rows — not enough to meaningfully exercise an incremental load or a star schema. A Python data generator (seasonal date distribution, valid foreign keys drawn from existing customers/employees/products/shippers) was used to produce **50,000+ orders and 130,000+ order line items**, giving the pipeline enough volume to behave like a real incremental workload rather than a one-shot toy load.
+The original Northwind dataset has only a few hundred rows — not enough to meaningfully exercise an incremental load or a star schema. A Python data generator (seasonal date distribution, valid foreign keys drawn from existing customers/employees/products/shippers) was used to produce **50,000+ orders and 1,30,0000+ order line items**, giving the pipeline enough volume to behave like a real incremental workload rather than a one-shot toy load.
