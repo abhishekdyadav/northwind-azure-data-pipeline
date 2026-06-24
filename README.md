@@ -2,6 +2,13 @@
 
 An end-to-end pipeline built on Azure that takes the Northwind Traders dataset, simulates thousands of incremental transactions, and turns them into a star schema that supports real sales and customer analytics — built around the same fundamentals (incremental loads, layered transformation, change tracking) used in production data platforms.
 
+## Architecture
+![Northwind Azure Data Pipeline Architecture](architecture.png)
+
+## Azure Data Factory Pipeline
+The pipeline is metadata-driven and performs incremental ingestion using a configuration table and watermark tracking. Each table is processed dynamically without requiring pipeline changes.
+![ADF Pipeline](images/adf_pipeline.png)
+
 See `architecture.png` for the full diagram and `LESSONS_LEARNED.md` for what changed (and why) over the course of building this.
 
 ## What this pipeline is for
